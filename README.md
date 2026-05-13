@@ -14,7 +14,7 @@ A fully offline simulation of a multi-agent AI system demonstrating planning, co
 
 ## Architecture
 
-Planner Agent → Coding Agent → Reviewer Agent
+User → Planner Agent → Coding Agent → Reviewer Agent → Output
 
 ## Workflow
 
@@ -23,6 +23,13 @@ Planner Agent → Coding Agent → Reviewer Agent
 3. Code generation (simulated)
 4. Code review (simulated)
 5. Output aggregation
+
+## Use Cases
+
+- AI agent workflow simulation
+- Multi-step reasoning demonstrations
+- Educational agent architecture testing
+- Reproducible AI system design experiments
 
 ## Purpose
 
@@ -34,3 +41,13 @@ Designed for demonstrating agentic AI workflows in constrained or offline enviro
 [Coding Agent] Generating implementation... [Coding Agent] Code generated.
 
 [Reviewer Agent] Reviewing generated code... [Reviewer Agent] Review complete.
+
+
+## Proof of Execution
+
+The system has been executed locally and demonstrates a full multi-agent workflow:
+
+Planner Agent → Coding Agent → Reviewer Agent
+
+Execution output screenshot:
+![Execution](screenshots/Screenshot%202026-05-13%20160326.png)
