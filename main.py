@@ -1,31 +1,66 @@
-print("\n=== MULTI-AGENT MOCK SYSTEM STARTED ===\n")
+print("\n=== MULTI-AGENT WORKFLOW SYSTEM INITIALIZED ===\n")
 
-class Planner:
+
+class PlannerAgent:
     def run(self):
-        print("[Planner] Breaking task into steps...")
-        return ["design", "implement", "review"]
+        print("[Planner Agent]")
+        print("Analyzing task requirements...")
+        print("Constructing execution workflow...")
+        print("Task decomposition complete.\n")
 
-class Coder:
+        return [
+            "Design workflow structure",
+            "Simulate implementation",
+            "Validate generated output"
+        ]
+
+
+class CodingAgent:
     def run(self, plan):
-        print("[Coder] Writing code based on plan...")
-        return "def hello(): return 'Hello World'"
+        print("[Coding Agent]")
+        print("Generating implementation...")
+        print("Preparing module structure...")
+        print("Execution phase complete.\n")
 
-class Reviewer:
+        return """
+def hello():
+    return "Hello World"
+"""
+
+
+class ReviewerAgent:
     def run(self, code):
-        print("[Reviewer] Checking code quality...")
-        return "Looks good. Add logging in production."
+        print("[Reviewer Agent]")
+        print("Reviewing generated output...")
+        print("Performing consistency checks...")
+        print("Validation complete.\n")
 
-planner = Planner()
-coder = Coder()
-reviewer = Reviewer()
+        return "Code structure validated successfully."
+
+
+planner = PlannerAgent()
+coder = CodingAgent()
+reviewer = ReviewerAgent()
 
 plan = planner.run()
-print("Plan:", plan)
+
+print("[System]")
+print("Execution Plan:")
+for step in plan:
+    print(f"- {step}")
+
+print()
 
 code = coder.run(plan)
-print("Code:", code)
+
+print("[System]")
+print("Generated Code:")
+print(code)
 
 review = reviewer.run(code)
-print("Review:", review)
 
-print("\n=== DONE ===")
+print("[System]")
+print("Review Summary:")
+print(review)
+
+print("\n=== WORKFLOW COMPLETED SUCCESSFULLY ===")

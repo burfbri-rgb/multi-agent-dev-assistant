@@ -37,6 +37,9 @@ Reviewer Agent
       ↓
 Final Output
 ```
+## Architecture Diagram
+
+![Architecture](diagrams/architecture.png)
 
 ---
 
