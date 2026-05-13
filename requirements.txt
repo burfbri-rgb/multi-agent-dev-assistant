@@ -1,3 +1,2 @@
-crewai
-openai
-python-dotenv
+# No external dependencies required
+# Fully offline mock simulation

@@ -1,33 +1,36 @@
-# Multi-Agent Development Assistant
+# Multi-Agent Development Assistant (Mock Mode)
 
 ## Overview
 
-A lightweight autonomous multi-agent workflow system for AI-assisted software development.
+A fully offline simulation of a multi-agent AI system demonstrating planning, coding, and review workflows.
 
 ## Features
 
-- Multi-agent orchestration
-- Long-chain reasoning workflows
-- Autonomous task decomposition
-- Iterative validation and review
-- AI-assisted coding pipelines
+- Multi-agent architecture simulation
+- Deterministic workflow execution
+- No external API dependencies
+- Reproducible execution for demos
+- Clear agent role separation
 
 ## Architecture
 
 Planner Agent → Coding Agent → Reviewer Agent
 
-## Example Workflow
+## Workflow
 
-1. Analyze user request
-2. Decompose into subtasks
-3. Generate implementation
-4. Validate outputs
-5. Return optimized solution
+1. Task input
+2. Plan generation (simulated)
+3. Code generation (simulated)
+4. Code review (simulated)
+5. Output aggregation
 
-## Example Use Cases
+## Purpose
 
-- Autonomous coding workflows
-- AI software engineering
-- Documentation generation
-- Task automation
-- Long-context reasoning experiments
+Designed for demonstrating agentic AI workflows in constrained or offline environments where API access is unavailable.
+
+## Example Output
+[Planner Agent] Analyzing task requirements... [Planner Agent] Plan created.
+
+[Coding Agent] Generating implementation... [Coding Agent] Code generated.
+
+[Reviewer Agent] Reviewing generated code... [Reviewer Agent] Review complete.
